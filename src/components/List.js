@@ -8,7 +8,7 @@ const List = ({ pokemons }) => {
         return (
           <Link
             key={pokemon.name}
-            to={`{/details/${pokemon.name}`}
+            to={`/details/${pokemon.name}`}
             className="list-element">{pokemon.name}
           </Link>
         )

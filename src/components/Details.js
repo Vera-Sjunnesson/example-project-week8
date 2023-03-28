@@ -10,7 +10,9 @@ const Details = () => {
     navigate(-1)
   }
   useEffect(() => {
-    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`).then((res) => res.json()).then((data) => setDetails(data))
+    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+      .then((res) => res.json())
+      .then((data) => setDetails(data))
   }, [pokemonName])
 
   return (

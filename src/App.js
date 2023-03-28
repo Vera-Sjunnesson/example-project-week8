@@ -17,7 +17,7 @@ export const App = () => {
         setList(data.results)
       })
       .catch((e) => {
-        console.error(e)
+        console.error(console.error(e))
       })
       .finally(() => {
         setLoading(false);
